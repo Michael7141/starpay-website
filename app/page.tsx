@@ -1,103 +1,121 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Icon } from "@iconify/react";
+import { ChevronDown } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+import PaymentIntegrations from "@/components/payment-integrations";
+import RequestMoneySection from "@/components/request-money-section";
+import MerchantDashboardSection from "@/components/merchant-dashboard-section";
+import GenerateBillSection from "@/components/generate-bill-section";
+import WhatStarPayOffersSection from "@/components/what-starpay-offers-section";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-[#0a1a1a] text-white">
+      <header className="container mx-auto py-4 px-4 flex items-center justify-between">
+        <div className="flex items-center">
+          <Image
+            src="/logo2.png"
+            alt="StarPay Logo"
+            width={120}
+            height={40}
+            className="mr-8"
+          />
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link
+              href="#products"
+              className="text-white/80 hover:text-white transition-colors"
+            >
+              Products
+            </Link>
+            <Link
+              href="#features"
+              className="text-white/80 hover:text-white transition-colors"
+            >
+              Features
+            </Link>
+            <Link
+              href="#developers"
+              className="text-white/80 hover:text-white transition-colors"
+            >
+              Developers
+            </Link>
+            <Link
+              href="#faq"
+              className="text-white/80 hover:text-white transition-colors"
+            >
+              FAQ
+            </Link>
+            <Link
+              href="#about"
+              className="text-white/80 hover:text-white transition-colors"
+            >
+              About us
+            </Link>
+          </nav>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Button className="bg-[#008F5F] hover:bg-emerald-600 text-white rounded-full">
+          Become a Merchant{" "}
+          <Icon icon="tabler:arrow-right" className="ml-2 h-4 w-4" />
+        </Button>
+      </header>
+
+      <section className="container mx-auto px-4 pt-20 pb-10 text-center relative">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+            STARPAY - THE SMARTER WAY
+            <br />
+            TO ACCEPT PAYMENTS
+          </h1>
+          <p className="text-white/70 text-lg max-w-3xl mx-auto mb-12">
+            With StarPay, you can effortlessly send or receive money from any
+            bank or digital wallet across Ethiopia, making
+            <br />
+            transactions not only convenient but also secure. Whether
+            you&apos;re paying for...
+          </p>
+          <Button className="bg-[#008F5F] hover:bg-emerald-600 text-white rounded-full" size={"lg"}>
+            Explore More <ChevronDown className="ml-2 h-5 w-5" />
+          </Button>
+        </div>
+
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="absolute w-[800px] h-[800px] rounded-full bg-emerald-500/10 blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+        </div>
+
+        <div className="mt-16 relative z-10">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/hero1.png"
+            alt="StarPay Dashboard"
+            width={1000}
+            height={500}
+            className="mx-auto rounded-xl shadow-2xl"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+      </section>
+
+      <PaymentIntegrations />
+
+      <RequestMoneySection />
+
+      <GenerateBillSection />
+
+      <WhatStarPayOffersSection />
+
+      <MerchantDashboardSection />
+
+      <section className="py-20 bg-[#0a1a1a]">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-6">
+            Continue Exploring StarPay
+          </h2>
+          <p className="text-white/70 text-lg max-w-3xl mx-auto">
+            Discover more features and benefits of using StarPay for your
+            business.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
