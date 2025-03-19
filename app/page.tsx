@@ -9,6 +9,11 @@ import RequestMoneySection from "@/components/request-money-section";
 import MerchantDashboardSection from "@/components/merchant-dashboard-section";
 import GenerateBillSection from "@/components/generate-bill-section";
 import WhatStarPayOffersSection from "@/components/what-starpay-offers-section";
+import LastIntegrationSection from "@/components/last-integration-section";
+import RemittanceApiSection from "@/components/remittance-api-section";
+import StarCoinSection from "@/components/star-coin-section";
+import JoinMerchantsSection from "@/components/join-merchants-section";
+import PaymentSolutionsSection from "@/components/payment-solutions-section";
 
 export default function Home() {
   return (
@@ -104,6 +109,16 @@ export default function Home() {
       <WhatStarPayOffersSection />
 
       <MerchantDashboardSection />
+
+      <LastIntegrationSection />
+
+      <RemittanceApiSection />
+
+      <StarCoinSection />
+
+      <JoinMerchantsSection />
+
+      <PaymentSolutionsSection />
 
       <section className="py-20 bg-[#0a1a1a]">
         <div className="container mx-auto px-4 text-center">
