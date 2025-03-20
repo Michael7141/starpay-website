@@ -77,6 +77,18 @@ export default function JoinMerchantsSection() {
             </div>
           </motion.div>
 
+          <motion.div
+            className="absolute bottom-60 left-2/5 -translate-x-1/2 -translate-y-1/2"
+            custom={0.2}
+            variants={scaleIn}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+          >
+            <div className="w-20 h-20 rounded-full bg-emerald-600 flex items-center justify-center">
+              <Icon icon="hugeicons:bank" className="w-10 h-10 text-white" />
+            </div>
+          </motion.div>
+
           {/* Right icon (coins) - outer orbit */}
           <motion.div
             className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2"
@@ -98,14 +110,26 @@ export default function JoinMerchantsSection() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center">
-              <Icon icon="hugeicons:bank" className="w-10 h-10 text-white" />
+            <div className="w-20 h-20 rounded-full bg-emerald-600 flex items-center justify-center">
+            <Icon icon="hugeicons:bank" className="w-10 h-10 text-white" />
             </div>
           </motion.div>
 
           {/* Left icon (store) - outer orbit */}
           <motion.div
-            className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2"
+            className="absolute top-1/3 left-10 -translate-x-1/2 -translate-y-1/2"
+            custom={0.5}
+            variants={scaleIn}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+          >
+            <div className="w-20 h-20 rounded-full bg-emerald-600 flex items-center justify-center">
+              <Icon icon="ep:coin" className="w-10 h-10 text-white" />
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="absolute top-2/3 left-6 -translate-x-1/2 -translate-y-1/2"
             custom={0.5}
             variants={scaleIn}
             initial="hidden"
@@ -118,16 +142,16 @@ export default function JoinMerchantsSection() {
 
           {/* Top-right phone - middle orbit */}
           <motion.div
-            className="absolute top-[130px] right-[130px]"
+            className="absolute top-[300px] right-[160px]"
             custom={0.6}
             variants={scaleIn}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center">
+            <div className="w-20 h-20 rounded-full bg-emerald-600 flex items-center justify-center">
               <Icon
-                icon="lucide:smartphone"
-                className="w-10 h-10 text-gray-400"
+                icon="solar:graph-new-linear"
+                className="w-10 h-10 text-white"
               />
             </div>
           </motion.div>
@@ -140,26 +164,26 @@ export default function JoinMerchantsSection() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center">
+            <div className="w-20 h-20 rounded-full bg-emerald-600 flex items-center justify-center">
               <Icon
-                icon="lucide:smartphone"
-                className="w-10 h-10 text-gray-400"
+                icon="solar:graph-new-linear"
+                className="w-10 h-10 text-white"
               />
             </div>
           </motion.div>
 
           {/* Bottom-right phone - middle orbit */}
           <motion.div
-            className="absolute bottom-[250px] right-[250px]"
+            className="absolute bottom-[235px] right-[235px]"
             custom={0.7}
             variants={scaleIn}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center">
+            <div className="w-20 h-20 rounded-full bg-emerald-600 flex items-center justify-center">
               <Icon
-                icon="lucide:smartphone"
-                className="w-10 h-10 text-gray-400"
+                icon="solar:graph-new-linear"
+                className="w-10 h-10 text-white"
               />
             </div>
           </motion.div>
@@ -172,14 +196,14 @@ export default function JoinMerchantsSection() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center">
-              <Icon icon="solar:shop-linear" className="w-10 h-10 text-white" />
+            <div className="w-20 h-20 rounded-full bg-emerald-600 flex items-center justify-center">
+            <Icon icon="solar:shop-linear" className="w-10 h-10 text-white" />
             </div>
           </motion.div>
 
           {/* Top-left chart - middle orbit */}
           <motion.div
-            className="absolute top-[130px] left-[130px]"
+            className="absolute top-[230px] left-[230px]"
             custom={0.9}
             variants={scaleIn}
             initial="hidden"
