@@ -19,42 +19,42 @@ const paymentSteps: PaymentStep[] = [
     id: "step1",
     title: "01. Initiate Your Bill",
     description: "Start the payment process by initiating your bill in just a few taps.",
-    image: "/initiate-bill.png",
+    image: "/payment-screens/initiate-bill.png",
     fallbackImage: "/placeholder.svg"
   },
   {
     id: "step2",
     title: "02. Choose Payment Options",
     description: "Select from various secure payment methods that work best for you.",
-    image: "/payment-options.png",
+    image: "/payment-screens/payment-options.png",
     fallbackImage: "/placeholder.svg"
   },
   {
     id: "step3",
     title: "03. Receive Your Payment",
     description: "Instantly receive payments directly to your account.",
-    image: "/receive-payment.png",
+    image: "/payment-screens/receive-payment.png",
     fallbackImage: "/placeholder.svg"
   },
   {
     id: "step4",
     title: "04. Enter Your Customer Info.",
     description: "Provide customer details for a personalized payment experience.",
-    image: "/customer-info.png",
+    image: "/payment-screens/customer-info.png",
     fallbackImage: "/placeholder.svg"
   },
   {
     id: "step5",
     title: "05. Wait for Seconds",
     description: "The system processes your request in just seconds.",
-    image: "/processing.png",
+    image: "/payment-screens/processing.png",
     fallbackImage: "/placeholder.svg"
   },
   {
     id: "step6",
     title: "06. Verify Your Payment",
     description: "Confirm and complete your transaction securely.",
-    image: "/verify-payment.png",
+    image: "/payment-screens/verify-payment.png",
     fallbackImage: "/placeholder.svg"
   },
 ];
@@ -176,10 +176,10 @@ const PaymentProcessSection: React.FC = () => {
                         alt={paymentSteps[activeStep].title}
                         fill
                         className="object-cover"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.src = paymentSteps[activeStep].fallbackImage || "/placeholder.svg";
-                        }}
+                        // onError={(e) => {
+                        //   const target = e.target as HTMLImageElement;
+                        //   target.src = paymentSteps[activeStep].fallbackImage || "/placeholder.svg";
+                        // }}
                       /> */}
                     </motion.div>
                   </AnimatePresence>

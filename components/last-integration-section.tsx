@@ -35,7 +35,7 @@ export default function LastIntegrationSection() {
       ref={sectionRef}
       className="py-20 relative overflow-hidden bg-[#0a1a1a] text-white"
       style={{
-        backgroundImage: `url('/code-background.png')`,
+        backgroundImage: `url('/api.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -193,9 +193,9 @@ function summarize_article($url) {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          <motion.div variants={fadeIn} className="bg-black/40 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
+          <motion.div variants={fadeIn} className="p-6">
             <div className="bg-gray-800 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-              <Icon icon="lucide:code" className="w-6 h-6 text-white" />
+              <Icon icon="mingcute:code-fill" className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-bold mb-2">Payments API</h3>
             <p className="text-gray-400">
@@ -203,17 +203,17 @@ function summarize_article($url) {
             </p>
           </motion.div>
 
-          <motion.div variants={fadeIn} className="bg-black/40 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
+          <motion.div variants={fadeIn} className="p-6">
             <div className="bg-gray-800 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-              <Icon icon="lucide:layout-grid" className="w-6 h-6 text-white" />
+              <Icon icon="iconamoon:category-fill" className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-bold mb-2">Web & Mobile Checkout SDKs</h3>
             <p className="text-gray-400">Create a dynamic checkouts experience across all your applications.</p>
           </motion.div>
 
-          <motion.div variants={fadeIn} className="bg-black/40 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
+          <motion.div variants={fadeIn} className="p-6">
             <div className="bg-gray-800 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-              <Icon icon="lucide:settings" className="w-6 h-6 text-white" />
+              <Icon icon="ant-design:setting-filled" className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-bold mb-2">Customization & Flexibility</h3>
             <p className="text-gray-400">
