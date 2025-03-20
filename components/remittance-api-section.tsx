@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import { useRef } from "react"
@@ -151,7 +152,7 @@ export default function RemittanceApiSection() {
             animate={isInView ? "visible" : "hidden"}
             transition={{ delay: 0.2 }}
           >
-            StarPay's Remittance API Empowers Businesses In The Remittance Industry With Seamless Access To All Banks In
+            StarPay&apos;s Remittance API Empowers Businesses In The Remittance Industry With Seamless Access To All Banks In
             Ethiopia Through A Single Integration. Our Solution Simplifies Transaction Processing And Provides A
             Centralized Portal Where Businesses Can Manage All Their Remittance Operations In One Place. With Secure,
             Efficient, And Real- Time Payments, StarPay Makes Cross-Border And Local Money Transfers Easier Than Ever.

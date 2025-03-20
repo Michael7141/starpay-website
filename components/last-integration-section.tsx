@@ -53,7 +53,7 @@ export default function LastIntegrationSection() {
           >
             THE LAST PAYMENTS
             <br />
-            INTEGRATION YOU'LL NEED
+            INTEGRATION YOU&apos;LL NEED
           </motion.h2>
 
           <motion.p

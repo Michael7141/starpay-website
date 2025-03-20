@@ -89,7 +89,7 @@ export default function PaymentSolutionsSection() {
           </h2>
           <p className="text-gray-300 text-lg">
             With StarPay, you can effortlessly send or receive money from any bank or digital wallet across
-            Ethiopia, making transactions not only convenient but also secure. Whether you're paying for
+            Ethiopia, making transactions not only convenient but also secure. Whether you&apos;re paying for
             goods, services, or sending money to family, StarPay makes it simple and safe.
           </p>
         </motion.div>
